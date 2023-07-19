@@ -1,0 +1,90 @@
+body {text-align: center}
+
+#wrapper{
+    grid-template-rows: 1fr 0.5fr;
+    display: grid;
+    
+  grid-template-areas: "header header header"
+                           "innergrid innergrid innergrid"
+                            "pepeha1 pepeha1 culture"
+                            "footer footer footer";
+                           
+    grid-gap: 5px;
+}
+
+#header,#innergrid,#pepeha1,#photo,#photo1,#footer,#home,#bio,#news,#gallery1,#products,#contact
+
+{ border:1px solid black}
+
+#pepeha1 {background-color:beige}
+
+#header{ grid-area: header}
+
+#innergrid {grid-area: innergrid}
+
+  #innergrid {
+    background-color:beige;
+       
+}
+#photo {
+     border-radius: 25%;
+}
+#photo1 {
+    border-radius: 25%;
+}
+       
+
+#footer{
+    grid-area: footer;
+}
+
+/*innergrid section that includes Home, Pepeha,Goals,Gallery, awards and Contacts Section*/
+
+#innergrid{
+    display: grid;
+grid-template-areas:"home bio news gallery1 products contact"
+    
+    
+}
+ 
+
+}
+/*home Section*/
+#home{
+    grid-area: home;
+  
+}
+/*pepeha Section*/
+#bio{
+    grid-area: bio;
+      
+}
+/*goals Section*/
+#news{
+    grid-area: news;
+     
+}
+/*gallery Section*/
+#gallery1{
+    grid-area: gallery1
+          
+}
+/*Awards Section*/
+#products{
+    grid-area: products;
+      
+}
+/*Contacts Section*/
+#contact{
+    grid-area: contacts;
+       
+}
+
+
+
+ 
+#wrapper{background-color:palegoldenrod;    
+
+}
+ 
+

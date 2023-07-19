@@ -1,0 +1,73 @@
+body {text-align: center}
+
+#wrapper{
+    grid-template-rows: 0.5fr 0.29  fr 1fr;
+    display: grid;
+    
+  grid-template-areas: "header header header"
+                           "innergrid innergrid innergrid"
+                           "award1 award1 award1"
+                            "footer footer footer";
+                           
+    grid-gap: 5px;
+}
+
+#header,#innergrid,#award1,#footer,#home,#bio,#news,#gallery1,#products,#contact
+
+{ border:1px solid black}
+#award1 {grid-area: award1;
+}
+#award1 {background-color: aqua;
+}
+
+
+#header{ grid-area: header}
+
+#innergrid {grid-area: innergrid}
+
+  #innergrid {
+    background-color:beige;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+/*innergrid section that includes Home, Pepeha,Goals,Gallery, awards and Contacts Section*/
+
+#innergrid{
+    display: grid;
+grid-template-areas:"home bio news gallery1 products contact"
+}
+ 
+
+}
+/*home Section*/
+#home{
+    grid-area: home;
+}
+/*pepeha Section*/
+#bio{
+    grid-area: bio;
+}
+/*goals Section*/
+#news{
+    grid-area: news;
+}
+/*gallery Section*/
+#gallery1{
+    grid-area: gallery1
+}
+/*Awards Section*/
+#products{
+    grid-area: products;
+}
+/*Contacts Section*/
+#contact{
+    grid-area: contacts;
+}
+
+#wrapper{background-color:palegoldenrod;
+}
+ 
+

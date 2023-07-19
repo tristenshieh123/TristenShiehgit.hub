@@ -1,0 +1,107 @@
+body {text-align: center}
+
+#wrapper{
+    grid-template-rows: 2fr 1fr 5fr fr;
+    display: grid;
+    
+  grid-template-areas: "header header header"
+                           "innergrid innergrid innergrid"
+                            "photo photo photo"
+                            "footer footer footer";
+                           
+    grid-gap: 5px;
+}
+
+#header,#innergrid,#pepeha1,#footer,#one,#two,#three,#four,#photos,#photo1,#photo2,#photo3,#home,#bio,#news,#gallery1,#products,#contact
+
+{ border:1px solid black}
+
+
+
+#header{ grid-area: header}
+
+#innergrid {grid-area: innergrid}
+
+
+
+#footer{
+    grid-area: footer;
+}
+
+/*innergrid section that includes Home, Pepeha,Goals,Gallery, awards and Contacts Section*/
+
+#innergrid{
+    display: grid;
+grid-template-areas:"home bio news gallery1 products contact"
+}
+ 
+
+}
+/*home Section*/
+#home{
+    grid-area: home;
+}
+/*pepeha Section*/
+#bio{
+    grid-area: bio;
+}
+/*goals Section*/
+#news{
+    grid-area: news;
+}
+/*gallery Section*/
+#gallery1{
+    grid-area: gallery1
+}
+/*Awards Section*/
+#products{
+    grid-area: products;
+}
+/*Contacts Section*/
+#contact{
+    grid-area: contacts;
+}
+#innergrid {
+    background-color:beige;
+}
+#photos {
+     border-radius: 5%;
+}
+#photo1 {
+     border-radius: 5%;
+}
+#photo2 {
+     border-radius: 5%;
+}
+#photo3 {
+     border-radius: 5%;
+}
+      
+      
+      
+      
+
+#photo{
+    display: grid;
+grid-template-areas:"one two three four";
+
+grid-gap: 200px;
+}
+#gallery{
+    text-align: center;
+}
+#one{
+    grid-area: one
+}
+#two {
+    grid-area: two
+}
+#three {grid-area: three}
+
+#four {grid-area: four}
+
+#wrapper{background-color:palegoldenrod;
+
+}
+ 
+

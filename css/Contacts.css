@@ -1,0 +1,102 @@
+body {text-align: center}
+
+#wrapper{
+    grid-template-rows: 0.3fr 0.2fr 0.3fr 0.5fr 0.5fr;
+    display: grid;
+    /*Header
+    Innergrid
+    Contactinfo Phone Number
+    ContactInfo Email and instagram
+    Contact Info Message me*/
+  grid-template-areas: "header header header"
+                           "innergrid innergrid innergrid"
+                            "profilepicture gallery gallery"
+                            "profilepicture con con"
+                            "profilepicture message message"
+                            "footer footer footer";
+    grid-gap: 5px;
+}
+
+#header,#innergrid,#profilepicture,#gallery,
+#whatsnew,#con,#productlisting,#home,#bio,#news,
+#gallery1,#products,#contact,#message, #footer
+
+{ border:1px solid black}
+
+#innergrid {
+    background-color:beige;
+}
+
+#header{ grid-area: header}
+
+#innergrid {grid-area: innergrid}
+
+#featuredproducts{
+    grid-area: featuredproducts;
+}
+#gallery{
+    grid-area: gallery;
+}
+
+
+#whatsnew{
+    grid-area: whatsnew;
+}
+
+#con{
+    grid-area: con;
+  
+}
+
+#message {
+    grid-area: message;
+}
+    
+
+#profilepicture{
+    grid-area: profilepicture;
+}
+  
+
+#footer{
+    grid-area: footer;
+}
+/*innergrid section that includes Home, Pepeha,Goals,Gallery, awards and Contacts Section*/
+
+#innergrid{
+    display: grid;
+grid-template-areas:"home bio news gallery1 products contact"
+}
+ 
+
+}
+/*home Section*/
+#home{
+    grid-area: home;
+}
+/*pepeha Section*/
+#bio{
+    grid-area: bio;
+}
+/*goals Section*/
+#news{
+    grid-area: news;
+}
+/*gallery Section*/
+#gallery1{
+    grid-area: gallery1
+}
+/*Awards Section*/
+#products{
+    grid-area: products;
+}
+/*Contacts Section*/
+#contact{
+    grid-area: contacts;
+}
+
+
+#wrapper{background-color:palegoldenrod;
+}
+ 
+

@@ -1,0 +1,77 @@
+body {text-align: center}
+
+#wrapper{
+    grid-template-rows: 1fr 0.5fr 2fr;
+    display: grid;
+    
+  grid-template-areas: "header header header"
+                           "innergrid innergrid innergrid"
+                            "goals goals goals "
+                            "footer footer footer";
+                           
+    grid-gap: 5px;
+}
+
+#header,#innergrid,#pepeha1,#footer,#goals,#home,#bio,#news,#gallery1,#products,#contact
+
+{ border:1px solid black}
+
+#goals {grid-area: goals;
+text-align: center;
+
+}
+
+#header{ grid-area: header}
+
+#innergrid {grid-area: innergrid}
+#innergrid {
+    background-color:beige;
+}
+#one {grid grid-area: one}
+#two {grid grid-area: two}
+#three {grid grid-area: three}
+
+  
+
+#footer{
+    grid-area: footer;
+}
+/*innergrid section that includes Home, Pepeha,Goals,Gallery, awards and Contacts Section*/
+
+#innergrid{
+    display: grid;
+grid-template-areas:"home bio news gallery1 products contact"
+}
+ 
+
+}
+/*home Section*/
+#home{
+    grid-area: home;
+}
+/*pepeha Section*/
+#bio{
+    grid-area: bio;
+}
+/*goals Section*/
+#news{
+    grid-area: news;
+}
+/*gallery Section*/
+#gallery1{
+    grid-area: gallery1
+}
+/*Awards Section*/
+#products{
+    grid-area: products;
+}
+/*Contacts Section*/
+#contact{
+    grid-area: contacts;
+}
+
+#wrapper{background-color:palegoldenrod;
+
+}
+ 
+
